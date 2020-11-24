@@ -95,13 +95,7 @@ namespace Bloknot
 
         private void OnTextChanged(object sender, EventArgs e)
         {
-            
-            if (!isFileChanged)
-            {
-                this.Text = this.Text.Replace('*', ' ');
-                isFileChanged = true;
-                this.Text = "*" + this.Text;
-            }
+
         }
         public void UpdateTextWithTitle()
         {
@@ -159,6 +153,42 @@ namespace Bloknot
         {
             fontDialog1.ShowDialog();
             textBox1.Font = fontDialog1.Font;
+        }
+
+        private void OnBoldClick(object sender, EventArgs e)
+        {
+            String s = textBox1.SelectedText;
+            textBox1.Font = new Font(textBox1.Font, FontStyle.Bold);
+            textBox1.SelectedText = s;
+        }
+
+        private void OnItalicClick(object sender, EventArgs e)
+        {
+            String s = textBox1.SelectedText;
+            textBox1.Font = new Font(textBox1.Font, FontStyle.Italic);
+            textBox1.SelectedText = s;
+        }
+
+        private void OnRegularClick(object sender, EventArgs e)
+        {
+            String s = textBox1.SelectedText;
+            textBox1.Font = new Font(textBox1.Font, FontStyle.Regular);
+            textBox1.SelectedText = s;
+        }
+
+        private void OnLeftClick(object sender, EventArgs e)
+        {
+            textBox1.TextAlign = HorizontalAlignment.Left;
+        }
+
+        private void OnCenterClick(object sender, EventArgs e)
+        {
+            textBox1.TextAlign = HorizontalAlignment.Center;
+        }
+
+        private void OnRightClick(object sender, EventArgs e)
+        {
+            textBox1.TextAlign = HorizontalAlignment.Right;
         }
     }
 }
