@@ -51,6 +51,10 @@
             this.выровнитьСлеваToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выровнитьПоЦентруToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выровнитьСправаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.видToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.изменитьФонToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +64,9 @@
             this.файлToolStripMenuItem,
             this.правкаToolStripMenuItem,
             this.форматToolStripMenuItem,
-            this.видToolStripMenuItem});
+            this.видToolStripMenuItem,
+            this.видToolStripMenuItem1,
+            this.оПрограммеToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -183,8 +189,8 @@
             this.выровнитьПоЦентруToolStripMenuItem,
             this.выровнитьСправаToolStripMenuItem});
             this.видToolStripMenuItem.Name = "видToolStripMenuItem";
-            this.видToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.видToolStripMenuItem.Text = "Вид";
+            this.видToolStripMenuItem.Size = new System.Drawing.Size(100, 20);
+            this.видToolStripMenuItem.Text = "Выравнивание";
             // 
             // textBox1
             // 
@@ -219,6 +225,28 @@
             this.выровнитьСправаToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.выровнитьСправаToolStripMenuItem.Text = "Выровнить справа";
             this.выровнитьСправаToolStripMenuItem.Click += new System.EventHandler(this.OnRightClick);
+            // 
+            // видToolStripMenuItem1
+            // 
+            this.видToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.изменитьФонToolStripMenuItem});
+            this.видToolStripMenuItem1.Name = "видToolStripMenuItem1";
+            this.видToolStripMenuItem1.Size = new System.Drawing.Size(39, 20);
+            this.видToolStripMenuItem1.Text = "Вид";
+            // 
+            // изменитьФонToolStripMenuItem
+            // 
+            this.изменитьФонToolStripMenuItem.Name = "изменитьФонToolStripMenuItem";
+            this.изменитьФонToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.изменитьФонToolStripMenuItem.Text = "Изменить фон...";
+            this.изменитьФонToolStripMenuItem.Click += new System.EventHandler(this.OnBackgroundClick);
+            // 
+            // оПрограммеToolStripMenuItem
+            // 
+            this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
+            this.оПрограммеToolStripMenuItem.Text = "О программе";
+            this.оПрограммеToolStripMenuItem.Click += new System.EventHandler(this.OnAboutClick);
             // 
             // Form1
             // 
@@ -263,6 +291,10 @@
         private System.Windows.Forms.ToolStripMenuItem выровнитьСлеваToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem выровнитьПоЦентруToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem выровнитьСправаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem видToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem изменитьФонToolStripMenuItem;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
     }
 }
 

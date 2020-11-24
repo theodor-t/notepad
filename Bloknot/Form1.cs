@@ -190,5 +190,16 @@ namespace Bloknot
         {
             textBox1.TextAlign = HorizontalAlignment.Right;
         }
+
+        private void OnBackgroundClick(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+            textBox1.BackColor = colorDialog1.Color;
+        }
+
+        private void OnAboutClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("Создал Цуркану Тудор | vk.com/erlax_official", "О программе", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }
