@@ -1,0 +1,10 @@
+D:\Tudor\Proiecte c#\Bloknot\Bloknot\bin\Debug\Bloknot.exe.config
+D:\Tudor\Proiecte c#\Bloknot\Bloknot\bin\Debug\Bloknot.exe
+D:\Tudor\Proiecte c#\Bloknot\Bloknot\bin\Debug\Bloknot.pdb
+D:\Tudor\Proiecte c#\Bloknot\Bloknot\obj\Debug\Bloknot.csprojAssemblyReference.cache
+D:\Tudor\Proiecte c#\Bloknot\Bloknot\obj\Debug\Bloknot.Form1.resources
+D:\Tudor\Proiecte c#\Bloknot\Bloknot\obj\Debug\Bloknot.Properties.Resources.resources
+D:\Tudor\Proiecte c#\Bloknot\Bloknot\obj\Debug\Bloknot.csproj.GenerateResource.cache
+D:\Tudor\Proiecte c#\Bloknot\Bloknot\obj\Debug\Bloknot.csproj.CoreCompileInputs.cache
+D:\Tudor\Proiecte c#\Bloknot\Bloknot\obj\Debug\Bloknot.exe
+D:\Tudor\Proiecte c#\Bloknot\Bloknot\obj\Debug\Bloknot.pdb
