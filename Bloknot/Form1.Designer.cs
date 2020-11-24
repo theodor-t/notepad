@@ -44,17 +44,17 @@
             this.наклонныйТекстToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.обычныйТекстToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.видToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.выровнитьСлеваToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выровнитьПоЦентруToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выровнитьСправаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.видToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.изменитьФонToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -192,19 +192,6 @@
             this.видToolStripMenuItem.Size = new System.Drawing.Size(100, 20);
             this.видToolStripMenuItem.Text = "Выравнивание";
             // 
-            // textBox1
-            // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(0, 24);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(800, 426);
-            this.textBox1.TabIndex = 1;
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // выровнитьСлеваToolStripMenuItem
             // 
             this.выровнитьСлеваToolStripMenuItem.Name = "выровнитьСлеваToolStripMenuItem";
@@ -237,7 +224,7 @@
             // изменитьФонToolStripMenuItem
             // 
             this.изменитьФонToolStripMenuItem.Name = "изменитьФонToolStripMenuItem";
-            this.изменитьФонToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.изменитьФонToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.изменитьФонToolStripMenuItem.Text = "Изменить фон...";
             this.изменитьФонToolStripMenuItem.Click += new System.EventHandler(this.OnBackgroundClick);
             // 
@@ -247,6 +234,20 @@
             this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.оПрограммеToolStripMenuItem.Text = "О программе";
             this.оПрограммеToolStripMenuItem.Click += new System.EventHandler(this.OnAboutClick);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox1.Location = new System.Drawing.Point(0, 24);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(800, 426);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.OnTextChanged);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Form1
             // 

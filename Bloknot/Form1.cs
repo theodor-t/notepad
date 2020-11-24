@@ -96,6 +96,12 @@ namespace Bloknot
         private void OnTextChanged(object sender, EventArgs e)
         {
 
+            if (!isFileChanged)
+            {
+                this.Text = this.Text.Replace('*', ' ');
+                isFileChanged = true;
+                this.Text = "*" + this.Text;
+            }
         }
         public void UpdateTextWithTitle()
         {
@@ -128,7 +134,6 @@ namespace Bloknot
         {
             textBox1.Text = textBox1.Text.Substring(0, textBox1.SelectionStart) + Clipboard.GetText() + textBox1.Text.Substring(textBox1.SelectionStart, textBox1.Text.Length-textBox1.SelectionStart);
         }
-
         private void OnCopyClick(object sender, EventArgs e)
         {
             CopyText();
@@ -199,7 +204,7 @@ namespace Bloknot
 
         private void OnAboutClick(object sender, EventArgs e)
         {
-            MessageBox.Show("Создал Цуркану Тудор | vk.com/erlax_official", "О программе", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show("Создал Цуркану Тудор | vk.com/erlax_official", "О программе", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
